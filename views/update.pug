@@ -1,0 +1,14 @@
+extends layout.pug 
+
+block nav 
+    .link
+        a.a(href="/") notes
+
+block content 
+    h2.header edit
+    .form
+        form(action=`/update/${notes.id}` method="POST")
+            .fields 
+                input.ttl(name="title" type="text" placeholder="title cannot be blank" value=notes.title)
+                textarea.nt(name="note", type="text", cols="30", rows="10")= notes.note
+            button.bttn update

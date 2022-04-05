@@ -1,0 +1,25 @@
+extends layout.pug 
+
+block msg 
+    p this web application was created to fullfill web technology module's requirements and does not represent an actual company or service
+
+block nav 
+    .link
+        a.a(href="/new") new 
+
+block content 
+    h2.header notes  
+
+    if(notes.length)
+            ul 
+                each note in notes 
+                    .notes 
+                        .note
+                            li=note.title
+                        .btns
+                            a.edit(href="/edit/"+note.id) 
+                                button edit 
+                            a.delete(href="/delete/"+note.id)
+                                button delete 
+
+

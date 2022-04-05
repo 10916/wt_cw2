@@ -1,0 +1,14 @@
+extends layout.pug 
+
+block nav 
+    .link
+        a.a(href="/") notes
+    
+block content 
+    h2.header new
+    .form
+        form(action="/new" method="POST")
+            .fields 
+                input.ttl(name="title" placeholder="title cannot be blank" type="text")
+                textarea.nt(name="note" placeholder="note" type="text" cols="30" rows="10")
+            button.btn add 

@@ -1,0 +1,112 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 300px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-left: 0rem;
+}
+
+.fields {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ttl, .ttlr, .nt {
+    width: 12rem;
+}
+
+.ttl, .ttlr {
+    margin-bottom: 0.5rem;
+}
+
+input::placeholder {
+    color: red;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+} 
+
+.title, .note {
+    width: 10rem;
+}
+
+.title {
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+
+.btn {
+    margin-top: 0.3rem;
+    margin-left: 45%;
+}
+
+.bttn {
+    margin-top: 0.3rem;
+    margin-left: 41%;
+}
+
+.notes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 5rem;
+    gap: 2.5px;
+}
+
+li {
+    display: flex;
+    align-self: center;
+    margin-bottom: 0.5rem;
+    list-style: none;
+    border: 1px solid;
+    overflow-x: hidden;
+    width: 10rem;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.a {
+    text-decoration: none;
+    color: black;
+}
+
+.a:hover, .edit:hover, .delete:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+.edit, .delete {
+    text-decoration: none;
+    text-align: right;
+    color: #000;
+    height: 20px;
+}
+
+.edit {
+    margin-right: 0.2rem;
+}
+
